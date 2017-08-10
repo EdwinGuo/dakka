@@ -1,6 +1,6 @@
 # A Docker image for cloud-based Akka Cluster applications
 This project is focused on allowing the nodes in your cluster to communicate with each other when the nodes are running 
-in Docker in Cloud environments.
+in Docker in Cloud environments that do not provide software defined network capabilities for Docker (like AWS ECS).
 
 A compact Docker image based on Alpine Linux with:
 - JRE 8 (8u111)
