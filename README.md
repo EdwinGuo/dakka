@@ -47,9 +47,9 @@ to AWS KMS (and the master key used for encryption).
 
 ## Architecture
 When the `dakka` container is initialized, it makes a call out to the Docker-Mirror service that exists on the same 
-bridge network to obtain the Docker Host IP and external Docker port that is mapped to the internal Docker container 
+bridge network to obtain the Docker Host IP and external Docker port (host port) that is mapped to the internal Docker container 
 port. The Docker internal port is chosen based on your supplied `APP_PORT` (which is your Akka Clustering port). The 
-host's external port (that maps to your Docker container port) will be made available to your container via the 
+host's port (that maps to your Docker container port) will be made available to your container via the 
 `HOST_PORT` environment variable. The Host IP that is hosting your Docker container is made available to your container 
 via the `HOST_IP` environment variable.
 
