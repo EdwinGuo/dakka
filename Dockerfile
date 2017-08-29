@@ -1,4 +1,4 @@
-FROM loyaltyone/docker-alpine-java-node:jre-8-node-7
+FROM loyaltyone/docker-alpine-java-node:jre-8-node-8
 
 MAINTAINER LoyaltyOne
 
